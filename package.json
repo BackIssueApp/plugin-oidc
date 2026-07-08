@@ -1,0 +1,11 @@
+{
+  "name": "oidc",
+  "version": "1.0.0",
+  "description": "Sign in with an OpenID Connect provider (Authentik, Keycloak, Auth0, Google, Entra, and more).",
+  "type": "module",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "openid-client": "^6.8.4"
+  }
+}
