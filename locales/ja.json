@@ -1,0 +1,22 @@
+{
+  "title": "OpenID Connect（SSO）",
+  "intro": "Authentik、Keycloak、Auth0、Google、Microsoft Entra などの ID プロバイダーでサインインします。",
+  "issuerUrl": "発行者 URL",
+  "clientId": "クライアント ID",
+  "clientSecret": "クライアントシークレット",
+  "buttonLabel": "ボタンのラベル",
+  "scopes": "スコープ",
+  "newUserRole": "新規ユーザーのロール",
+  "allowedDomains": "許可するメールドメイン",
+  "allowedDomainsPlaceholder": "example.com, other.org（空欄 = すべて）",
+  "redirectBase": "リダイレクトのベース URL",
+  "redirectBasePlaceholder": "https://backissue.example.com（空欄 = 自動）",
+  "redirectNote": "この<b>リダイレクト URI</b> をプロバイダーに登録してください：<code>{uri}</code>。ボタンのラベルを変更した場合は再起動が必要です。",
+  "_shared": {
+    "plugins": {
+      "oidc": {
+        "description": "OpenID Connect プロバイダー（Authentik、Keycloak、Auth0、Google、Entra など）でサインインします。"
+      }
+    }
+  }
+}

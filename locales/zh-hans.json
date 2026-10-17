@@ -1,0 +1,22 @@
+{
+  "title": "OpenID Connect（SSO）",
+  "intro": "通过身份提供方登录——Authentik、Keycloak、Auth0、Google、Microsoft Entra 等。",
+  "issuerUrl": "签发方 URL",
+  "clientId": "客户端 ID",
+  "clientSecret": "客户端密钥",
+  "buttonLabel": "按钮文字",
+  "scopes": "作用域",
+  "newUserRole": "新用户角色",
+  "allowedDomains": "允许的邮箱域名",
+  "allowedDomainsPlaceholder": "example.com, other.org（留空 = 不限）",
+  "redirectBase": "重定向基础 URL",
+  "redirectBasePlaceholder": "https://backissue.example.com（留空 = 自动）",
+  "redirectNote": "在身份提供方处登记此<b>重定向 URI</b>：<code>{uri}</code>。更改按钮文字后需要重启。",
+  "_shared": {
+    "plugins": {
+      "oidc": {
+        "description": "通过 OpenID Connect 提供方（Authentik、Keycloak、Auth0、Google、Entra 等）登录。"
+      }
+    }
+  }
+}

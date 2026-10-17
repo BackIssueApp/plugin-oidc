@@ -1,0 +1,22 @@
+{
+  "title": "OpenID Connect (SSO)",
+  "intro": "Logowanie przez dostawcę tożsamości — Authentik, Keycloak, Auth0, Google, Microsoft Entra i inne.",
+  "issuerUrl": "Adres wystawcy (Issuer URL)",
+  "clientId": "Identyfikator klienta",
+  "clientSecret": "Sekret klienta",
+  "buttonLabel": "Etykieta przycisku",
+  "scopes": "Zakresy",
+  "newUserRole": "Rola nowego użytkownika",
+  "allowedDomains": "Dozwolone domeny e-mail",
+  "allowedDomainsPlaceholder": "example.com, other.org  (puste = dowolne)",
+  "redirectBase": "Bazowy adres przekierowania",
+  "redirectBasePlaceholder": "https://backissue.example.com  (puste = automatycznie)",
+  "redirectNote": "Zarejestruj ten <b>adres URI przekierowania</b> u swojego dostawcy: <code>{uri}</code>. Zmiana etykiety przycisku wymaga ponownego uruchomienia.",
+  "_shared": {
+    "plugins": {
+      "oidc": {
+        "description": "Logowanie przez dostawcę OpenID Connect (Authentik, Keycloak, Auth0, Google, Entra i inni)."
+      }
+    }
+  }
+}
