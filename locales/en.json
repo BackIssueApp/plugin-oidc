@@ -1,0 +1,15 @@
+{
+  "title": "OpenID Connect (SSO)",
+  "intro": "Sign in with an identity provider — Authentik, Keycloak, Auth0, Google, Microsoft Entra, and more.",
+  "issuerUrl": "Issuer URL",
+  "clientId": "Client ID",
+  "clientSecret": "Client secret",
+  "buttonLabel": "Button label",
+  "scopes": "Scopes",
+  "newUserRole": "New-user role",
+  "allowedDomains": "Allowed email domains",
+  "allowedDomainsPlaceholder": "example.com, other.org  (blank = any)",
+  "redirectBase": "Redirect base URL",
+  "redirectBasePlaceholder": "https://backissue.example.com  (blank = auto)",
+  "redirectNote": "Register this <b>redirect URI</b> with your provider: <code>{uri}</code>. Changing the button label needs a restart."
+}

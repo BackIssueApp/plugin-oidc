@@ -1,0 +1,15 @@
+{
+  "title": "OpenID Connect (SSO)",
+  "intro": "Aanmelden via een identiteitsprovider — Authentik, Keycloak, Auth0, Google, Microsoft Entra en meer.",
+  "issuerUrl": "Issuer-URL",
+  "clientId": "Client-ID",
+  "clientSecret": "Client-secret",
+  "buttonLabel": "Knoptekst",
+  "scopes": "Scopes",
+  "newUserRole": "Rol voor nieuwe accounts",
+  "allowedDomains": "Toegestane e-maildomeinen",
+  "allowedDomainsPlaceholder": "example.com, other.org  (leeg = alle)",
+  "redirectBase": "Basis-URL voor omleiding",
+  "redirectBasePlaceholder": "https://backissue.example.com  (leeg = automatisch)",
+  "redirectNote": "Registreer deze <b>redirect-URI</b> bij je provider: <code>{uri}</code>. Een andere knoptekst vereist een herstart."
+}

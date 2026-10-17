@@ -1,0 +1,15 @@
+{
+  "title": "OpenID Connect (SSO)",
+  "intro": "Accedi con un provider di identità — Authentik, Keycloak, Auth0, Google, Microsoft Entra e altri.",
+  "issuerUrl": "URL dell'issuer",
+  "clientId": "ID client",
+  "clientSecret": "Segreto client",
+  "buttonLabel": "Etichetta del pulsante",
+  "scopes": "Ambiti (scopes)",
+  "newUserRole": "Ruolo dei nuovi account",
+  "allowedDomains": "Domini e-mail consentiti",
+  "allowedDomainsPlaceholder": "example.com, other.org  (vuoto = qualsiasi)",
+  "redirectBase": "URL di base per il reindirizzamento",
+  "redirectBasePlaceholder": "https://backissue.example.com  (vuoto = automatico)",
+  "redirectNote": "Registra questo <b>URI di reindirizzamento</b> presso il tuo provider: <code>{uri}</code>. Cambiare l'etichetta del pulsante richiede un riavvio."
+}

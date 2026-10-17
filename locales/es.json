@@ -1,0 +1,15 @@
+{
+  "title": "OpenID Connect (SSO)",
+  "intro": "Inicia sesión con un proveedor de identidad — Authentik, Keycloak, Auth0, Google, Microsoft Entra y más.",
+  "issuerUrl": "URL del emisor",
+  "clientId": "ID de cliente",
+  "clientSecret": "Secreto de cliente",
+  "buttonLabel": "Texto del botón",
+  "scopes": "Ámbitos (scopes)",
+  "newUserRole": "Rol para cuentas nuevas",
+  "allowedDomains": "Dominios de correo permitidos",
+  "allowedDomainsPlaceholder": "example.com, other.org  (en blanco = cualquiera)",
+  "redirectBase": "URL base de redirección",
+  "redirectBasePlaceholder": "https://backissue.example.com  (en blanco = automática)",
+  "redirectNote": "Registra esta <b>URI de redirección</b> en tu proveedor: <code>{uri}</code>. Cambiar el texto del botón requiere un reinicio."
+}

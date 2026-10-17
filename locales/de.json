@@ -1,0 +1,15 @@
+{
+  "title": "OpenID Connect (SSO)",
+  "intro": "Anmeldung über einen Identitätsanbieter — Authentik, Keycloak, Auth0, Google, Microsoft Entra und mehr.",
+  "issuerUrl": "Issuer-URL",
+  "clientId": "Client-ID",
+  "clientSecret": "Client-Secret",
+  "buttonLabel": "Beschriftung der Schaltfläche",
+  "scopes": "Scopes",
+  "newUserRole": "Rolle für neue Konten",
+  "allowedDomains": "Erlaubte E-Mail-Domains",
+  "allowedDomainsPlaceholder": "example.com, other.org  (leer = alle)",
+  "redirectBase": "Basis-URL für die Weiterleitung",
+  "redirectBasePlaceholder": "https://backissue.example.com  (leer = automatisch)",
+  "redirectNote": "Diese <b>Redirect-URI</b> beim Anbieter registrieren: <code>{uri}</code>. Eine geänderte Beschriftung der Schaltfläche braucht einen Neustart."
+}

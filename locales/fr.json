@@ -1,0 +1,15 @@
+{
+  "title": "OpenID Connect (SSO)",
+  "intro": "Connexion via un fournisseur d'identité — Authentik, Keycloak, Auth0, Google, Microsoft Entra et d'autres.",
+  "issuerUrl": "URL de l'émetteur",
+  "clientId": "Identifiant client",
+  "clientSecret": "Secret client",
+  "buttonLabel": "Libellé du bouton",
+  "scopes": "Portées (scopes)",
+  "newUserRole": "Rôle des nouveaux comptes",
+  "allowedDomains": "Domaines e-mail autorisés",
+  "allowedDomainsPlaceholder": "example.com, other.org  (vide = tous)",
+  "redirectBase": "URL de base de redirection",
+  "redirectBasePlaceholder": "https://backissue.example.com  (vide = automatique)",
+  "redirectNote": "Enregistrez cette <b>URI de redirection</b> auprès de votre fournisseur : <code>{uri}</code>. Modifier le libellé du bouton nécessite un redémarrage."
+}
