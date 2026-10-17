@@ -11,5 +11,12 @@
   "allowedDomainsPlaceholder": "example.com, other.org  (leeg = alle)",
   "redirectBase": "Basis-URL voor omleiding",
   "redirectBasePlaceholder": "https://backissue.example.com  (leeg = automatisch)",
-  "redirectNote": "Registreer deze <b>redirect-URI</b> bij je provider: <code>{uri}</code>. Een andere knoptekst vereist een herstart."
+  "redirectNote": "Registreer deze <b>redirect-URI</b> bij je provider: <code>{uri}</code>. Een andere knoptekst vereist een herstart.",
+  "_shared": {
+    "plugins": {
+      "oidc": {
+        "description": "Aanmelden met een OpenID Connect-provider (Authentik, Keycloak, Auth0, Google, Entra en meer)."
+      }
+    }
+  }
 }

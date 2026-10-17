@@ -11,5 +11,12 @@
   "allowedDomainsPlaceholder": "example.com, other.org  (vazio = qualquer)",
   "redirectBase": "URL base de redirecionamento",
   "redirectBasePlaceholder": "https://backissue.example.com  (vazio = automático)",
-  "redirectNote": "Registe este <b>URI de redirecionamento</b> no seu fornecedor: <code>{uri}</code>. Alterar o texto do botão exige um reinício."
+  "redirectNote": "Registe este <b>URI de redirecionamento</b> no seu fornecedor: <code>{uri}</code>. Alterar o texto do botão exige um reinício.",
+  "_shared": {
+    "plugins": {
+      "oidc": {
+        "description": "Início de sessão com um fornecedor OpenID Connect (Authentik, Keycloak, Auth0, Google, Entra e outros)."
+      }
+    }
+  }
 }

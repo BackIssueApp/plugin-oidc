@@ -11,5 +11,12 @@
   "allowedDomainsPlaceholder": "example.com, other.org  (blank = any)",
   "redirectBase": "Redirect base URL",
   "redirectBasePlaceholder": "https://backissue.example.com  (blank = auto)",
-  "redirectNote": "Register this <b>redirect URI</b> with your provider: <code>{uri}</code>. Changing the button label needs a restart."
+  "redirectNote": "Register this <b>redirect URI</b> with your provider: <code>{uri}</code>. Changing the button label needs a restart.",
+  "_shared": {
+    "plugins": {
+      "oidc": {
+        "description": "Sign in with an OpenID Connect provider (Authentik, Keycloak, Auth0, Google, Entra, and more)."
+      }
+    }
+  }
 }
