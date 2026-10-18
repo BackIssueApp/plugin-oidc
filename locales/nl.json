@@ -12,6 +12,8 @@
   "redirectBase": "Basis-URL voor omleiding",
   "redirectBasePlaceholder": "https://backissue.example.com  (leeg = automatisch)",
   "redirectNote": "Registreer deze <b>redirect-URI</b> bij je provider: <code>{uri}</code>. Een andere knoptekst vereist een herstart.",
+  "trustEmail": "E-mailadressen van deze provider vertrouwen",
+  "trustEmailNote": "Een e-mailadres dat de provider niet als geverifieerd markeert, wordt nooit gebruikt om een bestaand account te koppelen of om de domeincontrole te halen. Zet dit alleen aan voor een provider die adressen controleert maar dat niet meldt, zoals Microsoft Entra.",
   "_shared": {
     "plugins": {
       "oidc": {

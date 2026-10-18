@@ -12,6 +12,8 @@
   "redirectBase": "Bazowy adres przekierowania",
   "redirectBasePlaceholder": "https://backissue.example.com  (puste = automatycznie)",
   "redirectNote": "Zarejestruj ten <b>adres URI przekierowania</b> u swojego dostawcy: <code>{uri}</code>. Zmiana etykiety przycisku wymaga ponownego uruchomienia.",
+  "trustEmail": "Ufaj adresom e-mail od tego dostawcy",
+  "trustEmailNote": "Adres, którego dostawca nie oznaczył jako zweryfikowany, nigdy nie służy do powiązania istniejącego konta ani do przejścia kontroli domeny. Włącz tylko dla dostawcy, który sprawdza adresy, ale tego nie zgłasza, np. Microsoft Entra.",
   "_shared": {
     "plugins": {
       "oidc": {

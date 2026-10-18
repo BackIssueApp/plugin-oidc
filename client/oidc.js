@@ -33,6 +33,8 @@
         '<label class="field"><span>' + te('newUserRole', 'New-user role') + '</span><input id="set-oidcAutoRole" type="text" spellcheck="false" placeholder="viewer"></label>' +
         '<label class="field"><span>' + te('allowedDomains', 'Allowed email domains') + '</span><input id="set-oidcAllowedDomains" type="text" spellcheck="false" placeholder="' + te('allowedDomainsPlaceholder', 'example.com, other.org  (blank = any)') + '"></label>' +
         '<label class="field"><span>' + te('redirectBase', 'Redirect base URL') + '</span><input id="set-oidcRedirectBase" type="text" spellcheck="false" placeholder="' + te('redirectBasePlaceholder', 'https://backissue.example.com  (blank = auto)') + '"></label>' +
+        '<label class="field field--check"><span class="switch"><input id="set-oidcTrustEmail" type="checkbox"><span class="switch__track"></span></span><span>' + te('trustEmail', 'Trust email addresses from this provider') + '</span></label>' +
+        '<p class="modal__note">' + te('trustEmailNote', 'An email the provider has not marked as verified is never used to link an existing account or to pass the domain check. Turn this on only for a provider that checks addresses but does not say so, such as Microsoft Entra.') + '</p>' +
         '<p class="modal__note">' + trh('redirectNote', 'Register this <b>redirect URI</b> with your provider: <code>{uri}</code>. Changing the button label needs a restart.', { uri: '<your BackIssue URL>/api/oidc/callback' }) + '</p>' +
       '</div>');
   });

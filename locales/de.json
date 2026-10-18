@@ -12,6 +12,8 @@
   "redirectBase": "Basis-URL für die Weiterleitung",
   "redirectBasePlaceholder": "https://backissue.example.com  (leer = automatisch)",
   "redirectNote": "Diese <b>Redirect-URI</b> beim Anbieter registrieren: <code>{uri}</code>. Eine geänderte Beschriftung der Schaltfläche braucht einen Neustart.",
+  "trustEmail": "E-Mail-Adressen dieses Anbieters vertrauen",
+  "trustEmailNote": "Eine E-Mail-Adresse, die der Anbieter nicht als bestätigt kennzeichnet, wird nie zum Verknüpfen eines bestehenden Kontos oder für die Domainprüfung verwendet. Nur für Anbieter einschalten, die Adressen prüfen, das aber nicht mitteilen, etwa Microsoft Entra.",
   "_shared": {
     "plugins": {
       "oidc": {

@@ -12,6 +12,8 @@
   "redirectBase": "URL base de redirecionamento",
   "redirectBasePlaceholder": "https://backissue.example.com  (vazio = automático)",
   "redirectNote": "Registe este <b>URI de redirecionamento</b> no seu fornecedor: <code>{uri}</code>. Alterar o texto do botão exige um reinício.",
+  "trustEmail": "Confiar nos endereços de email deste fornecedor",
+  "trustEmailNote": "Um email que o fornecedor não marcou como verificado nunca é usado para associar uma conta existente nem para passar a verificação de domínio. Ative apenas para um fornecedor que verifica os endereços mas não o indica, como o Microsoft Entra.",
   "_shared": {
     "plugins": {
       "oidc": {

@@ -47,6 +47,16 @@ function origin(req) {
 const redirectUri = (req) => `${origin(req)}/api/oidc/callback`;
 const scopes = () => String(config.oidcScopes || 'openid email profile').trim() || 'openid email profile';
 
+/** The email to sign in with, or null. An email the provider hasn't verified
+ *  can be anyone's: it must never link an existing account or pass the domain
+ *  check. Some providers verify addresses but don't send email_verified
+ *  (Microsoft Entra); the admin can opt in to trusting those. */
+export function trustedEmail(claims, cfg = {}) {
+  if (!claims?.email) return null;
+  const verified = claims.email_verified === true || claims.email_verified === 'true' || cfg.oidcTrustEmail === true;
+  return verified ? String(claims.email) : null;
+}
+
 function esc(s) {
   return String(s).replace(/[<>&"]/g, (c) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;' }[c]));
 }
@@ -88,7 +98,7 @@ async function callbackHandler(req, res) {
     });
     const claims = tokens.claims() || {};
     const subject = claims.sub;
-    const email = claims.email ? String(claims.email) : null;
+    const email = trustedEmail(claims, config);
     const name = claims.name || claims.preferred_username || null;
     if (!subject) throw new Error('the provider returned no subject (sub) claim');
 
@@ -113,18 +123,28 @@ async function callbackHandler(req, res) {
 }
 
 export default function register(api) {
+  // allowEmpty: clearing a field in Settings must stick (blank = default).
   api.registerSettings({
-    oidcIssuer: { type: 'string' },
-    oidcClientId: { type: 'string' },
-    oidcClientSecret: { type: 'string' },
-    oidcScopes: { type: 'string' },
-    oidcLabel: { type: 'string' },
-    oidcAllowedDomains: { type: 'string' },
-    oidcAutoRole: { type: 'string' },
-    oidcRedirectBase: { type: 'string' },
+    oidcIssuer: { type: 'string', allowEmpty: true },
+    oidcClientId: { type: 'string', allowEmpty: true },
+    oidcClientSecret: { type: 'string', allowEmpty: true },
+    oidcScopes: { type: 'string', allowEmpty: true },
+    oidcLabel: { type: 'string', allowEmpty: true },
+    oidcAllowedDomains: { type: 'string', allowEmpty: true },
+    oidcAutoRole: { type: 'string', allowEmpty: true },
+    oidcRedirectBase: { type: 'string', allowEmpty: true },
+    oidcTrustEmail: { type: 'bool' },
   });
-  // The login-page button. Label is read at boot; changing it needs a restart.
-  api.registerAuthProvider({ id: PROVIDER, label: String(config.oidcLabel || 'SSO'), loginPath: '/api/oidc/login' });
+  // The login-page button. BackIssue 0.9.2+ asks isEnabled() (no button until
+  // an issuer and client id are set) and getLabel() (a renamed button shows
+  // without a restart); older versions use the static label.
+  api.registerAuthProvider({
+    id: PROVIDER,
+    label: String(config.oidcLabel || 'SSO'),
+    loginPath: '/api/oidc/login',
+    isEnabled: () => !!(String(config.oidcIssuer || '').trim() && String(config.oidcClientId || '').trim()),
+    getLabel: () => String(config.oidcLabel || '').trim() || 'SSO',
+  });
   api.registerClientAsset({ js: 'client/oidc.js' });
   // Public: the browser hits these unauthenticated (that's the point of login).
   api.registerRoute('get', '/api/oidc/login', loginHandler, { access: 'public' });

@@ -22,6 +22,11 @@ the app's `plugins/` directory and restart.
    **redirect base** if BackIssue sits behind a proxy that hides its
    public URL.
 
+A first sign-in links to an existing account only when the provider marks
+the email as verified, and only a verified email passes the domain check. If
+your provider checks addresses but doesn't send that flag (Microsoft Entra),
+turn on **Trust email addresses from this provider**.
+
 A *Disable password login* toggle makes the site SSO-only; admins always
 keep a password fallback, so a downed provider can't lock you out.
 

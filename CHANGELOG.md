@@ -8,6 +8,29 @@ by the maintainers when changes merge, so concurrent PRs don't conflict here.
 
 ## [Unreleased]
 
+### Added
+
+- **Trust email addresses from this provider**, a switch under Settings →
+  Sign-in for providers that check addresses but don't mark them as verified,
+  such as Microsoft Entra.
+
+### Changed
+
+- **No SSO button until SSO is set up.** On BackIssue 0.9.2 and newer, the
+  login page shows the button only once an issuer and client ID are filled in,
+  and a renamed button shows without a restart.
+
+### Fixed
+
+- **Only a verified email links an account.** A first sign-in used to link to
+  any existing account with the same email, even one the provider never
+  verified, so someone who could set an unverified address at the provider
+  could sign in as another user. The allowed-domains check now also needs a
+  verified email. If your provider doesn't send that flag and you restrict
+  domains, turn on the new trust switch or those sign-ins are refused.
+- **SSO fields can be cleared.** Blanking a field in Settings used to be
+  ignored, so a value could never be removed once saved.
+
 ## [1.1.0] — 2026-10-17
 
 ### Added

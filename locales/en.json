@@ -12,6 +12,8 @@
   "redirectBase": "Redirect base URL",
   "redirectBasePlaceholder": "https://backissue.example.com  (blank = auto)",
   "redirectNote": "Register this <b>redirect URI</b> with your provider: <code>{uri}</code>. Changing the button label needs a restart.",
+  "trustEmail": "Trust email addresses from this provider",
+  "trustEmailNote": "An email the provider has not marked as verified is never used to link an existing account or to pass the domain check. Turn this on only for a provider that checks addresses but does not say so, such as Microsoft Entra.",
   "_shared": {
     "plugins": {
       "oidc": {

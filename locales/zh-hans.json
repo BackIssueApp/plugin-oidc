@@ -12,6 +12,8 @@
   "redirectBase": "重定向基础 URL",
   "redirectBasePlaceholder": "https://backissue.example.com（留空 = 自动）",
   "redirectNote": "在身份提供方处登记此<b>重定向 URI</b>：<code>{uri}</code>。更改按钮文字后需要重启。",
+  "trustEmail": "信任此提供方的电子邮件地址",
+  "trustEmailNote": "提供方未标记为已验证的邮箱，绝不会用于关联现有账户或通过域名检查。仅当提供方会验证地址但不告知时（例如 Microsoft Entra）才开启此项。",
   "_shared": {
     "plugins": {
       "oidc": {

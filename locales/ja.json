@@ -12,6 +12,8 @@
   "redirectBase": "リダイレクトのベース URL",
   "redirectBasePlaceholder": "https://backissue.example.com（空欄 = 自動）",
   "redirectNote": "この<b>リダイレクト URI</b> をプロバイダーに登録してください：<code>{uri}</code>。ボタンのラベルを変更した場合は再起動が必要です。",
+  "trustEmail": "このプロバイダーのメールアドレスを信頼する",
+  "trustEmailNote": "プロバイダーが確認済みとしていないメールアドレスは、既存アカウントへの関連付けやドメインの確認には使われません。アドレスを確認していてもその旨を送らないプロバイダー（Microsoft Entra など）の場合にだけオンにしてください。",
   "_shared": {
     "plugins": {
       "oidc": {
