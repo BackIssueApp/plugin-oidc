@@ -8,6 +8,8 @@ by the maintainers when changes merge, so concurrent PRs don't conflict here.
 
 ## [Unreleased]
 
+## [1.2.0] — 2026-10-18
+
 ### Added
 
 - **Trust email addresses from this provider**, a switch under Settings →
